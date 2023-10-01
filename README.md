@@ -6,7 +6,7 @@ mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=../include/abseil-cpp  
 make && make install  
 
-when you compile your .cpp file including <absl/hash/hash.h>, you are supposed to link that with the other three libraries like:  
+Whenever you compile your .cpp files including "absl/hash/hash.h", you are supposed to link that with the other three libraries like:  
 LDFLAGS = -L./include/abseil-cpp/lib -labsl_hash -labsl_city -labsl_low_level_hash  
 
 ## Table of Contents
